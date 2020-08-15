@@ -1,0 +1,64 @@
+body{
+    font-size: 19px;
+    border: 1px solid red;
+}
+
+h1{
+    border:inherit;
+}
+
+p{
+    border:inherit;
+    /*font-size: initial;*/
+}
+
+#pagewrapper{
+    color: grey;
+    font-size: 30px;
+}
+
+#pagewrapper  .content{
+    text-decoration: none;
+}
+/* 
+убедитесь, что используемый комбинатор (в составных селекторах ) никак 
+не  будут  влиять  на  число  специфичности.   Например:  #pagewrapper  > 
+.content  и  #pagewrapper  .content  –  будут  иметь  одинаковую 
+специфичность,  и  подчиняться 
+*/
+/*#pagewrapper > .content{
+    text-decoration: underline;
+}*/
+
+
+
+.content p{
+    color:red;
+}
+
+.content{
+    color:unset;
+    /*font-size: inherit;*/
+    font-size: 15px;
+    background: khaki;
+}
+
+#pagewrapper2{
+    color: greenyellow;
+    
+}
+
+#pagewrapper3{
+    color: thistle;
+}
+
+.secondary{
+    font-size: inherit;
+    background: olive !important;
+}
+.not{
+    background:yellow;
+}
+p:not(.not){
+    background: orange;
+}
